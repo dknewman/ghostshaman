@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <defs>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39ff14" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#39ff14" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#39ff14" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#39ff14" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="greenGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <ellipse cx="200" cy="220" rx="160" ry="180" fill="url(#bgGlow)"/>
+
+  <!-- Hood outer shape - large dark cloak -->
+  <path d="M60 120 Q40 80 80 40 Q120 10 200 5 Q280 10 320 40 Q360 80 340 120 L360 420 Q360 460 320 470 Q280 480 200 480 Q120 480 80 470 Q40 460 40 420 Z" fill="#0d0d0d"/>
+
+  <!-- Hood inner shadow -->
+  <path d="M90 130 Q80 95 100 65 Q130 30 200 25 Q270 30 300 65 Q320 95 310 130 L325 400 Q320 435 290 445 Q250 455 200 455 Q150 455 110 445 Q80 435 75 400 Z" fill="#141414"/>
+
+  <!-- Face area - lighter dark oval -->
+  <ellipse cx="200" cy="230" rx="90" ry="105" fill="#1a1a1a"/>
+
+  <!-- Skull forehead -->
+  <path d="M130 165 Q135 140 200 138 Q265 140 270 165 Q278 195 275 220 Q270 240 200 242 Q130 240 125 220 Q122 195 130 165 Z" fill="#2a2a2a"/>
+
+  <!-- Cheekbones -->
+  <path d="M125 220 Q118 245 122 265 Q128 280 145 285 Q130 290 125 310 Q138 320 155 315 L200 318 L245 315 Q262 320 275 310 Q270 290 255 285 Q272 280 278 265 Q282 245 275 220" fill="#222222"/>
+
+  <!-- Jaw -->
+  <path d="M145 285 Q155 330 165 350 Q180 365 200 366 Q220 365 235 350 Q245 330 255 285" fill="#1e1e1e"/>
+  <path d="M155 315 Q160 355 170 370 Q182 382 200 383 Q218 382 230 370 Q240 355 245 315" fill="#252525"/>
+
+  <!-- Teeth -->
+  <rect x="168" y="340" width="12" height="20" rx="2" fill="#e0e0e0" opacity="0.9"/>
+  <rect x="184" y="340" width="12" height="22" rx="2" fill="#e0e0e0" opacity="0.9"/>
+  <rect x="200" y="340" width="12" height="22" rx="2" fill="#e0e0e0" opacity="0.9"/>
+  <rect x="216" y="340" width="12" height="20" rx="2" fill="#e0e0e0" opacity="0.9"/>
+
+  <!-- Nose cavity -->
+  <path d="M192 270 L200 255 L208 270 Q208 285 200 287 Q192 285 192 270 Z" fill="#0d0d0d"/>
+
+  <!-- LEFT EYE SOCKET -->
+  <ellipse cx="163" cy="200" rx="28" ry="24" fill="#0a0a0a"/>
+  <!-- Eye glow rings -->
+  <ellipse cx="163" cy="200" rx="24" ry="20" fill="#001a00"/>
+  <ellipse cx="163" cy="200" rx="18" ry="15" fill="#003300"/>
+  <!-- Iris glow -->
+  <ellipse cx="163" cy="200" rx="13" ry="11" fill="#39ff14" opacity="0.8" filter="url(#greenGlow)"/>
+  <ellipse cx="163" cy="200" rx="8" ry="7" fill="#39ff14"/>
+  <ellipse cx="163" cy="200" rx="4" ry="3.5" fill="#80ff60"/>
+  <!-- Pupil -->
+  <ellipse cx="163" cy="200" rx="2" ry="2" fill="#ffffff" opacity="0.9"/>
+
+  <!-- RIGHT EYE SOCKET -->
+  <ellipse cx="237" cy="200" rx="28" ry="24" fill="#0a0a0a"/>
+  <ellipse cx="237" cy="200" rx="24" ry="20" fill="#001a00"/>
+  <ellipse cx="237" cy="200" rx="18" ry="15" fill="#003300"/>
+  <ellipse cx="237" cy="200" rx="13" ry="11" fill="#39ff14" opacity="0.8" filter="url(#greenGlow)"/>
+  <ellipse cx="237" cy="200" rx="8" ry="7" fill="#39ff14"/>
+  <ellipse cx="237" cy="200" rx="4" ry="3.5" fill="#80ff60"/>
+  <ellipse cx="237" cy="200" rx="2" ry="2" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Eye glow halos (outside sockets) -->
+  <ellipse cx="163" cy="200" rx="32" ry="28" fill="none" stroke="#39ff14" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="237" cy="200" rx="32" ry="28" fill="none" stroke="#39ff14" stroke-width="1" opacity="0.3"/>
+
+  <!-- Hood rim / shadow details -->
+  <path d="M90 130 Q95 105 110 85 Q140 55 200 50 Q260 55 290 85 Q305 105 310 130" stroke="#39ff14" stroke-width="0.5" fill="none" opacity="0.2"/>
+
+  <!-- Smoke wisps bottom left -->
+  <path d="M70 400 Q55 370 65 340 Q75 310 60 280" stroke="#39ff14" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+  <path d="M85 430 Q68 395 80 360 Q90 330 75 295" stroke="#39ff14" stroke-width="1" fill="none" opacity="0.15" stroke-linecap="round"/>
+
+  <!-- Smoke wisps bottom right -->
+  <path d="M330 400 Q345 370 335 340 Q325 310 340 280" stroke="#39ff14" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+  <path d="M315 430 Q332 395 320 360 Q310 330 325 295" stroke="#39ff14" stroke-width="1" fill="none" opacity="0.15" stroke-linecap="round"/>
+
+  <!-- Subtle crack lines on skull -->
+  <path d="M200 145 L197 175 L203 195" stroke="#39ff14" stroke-width="0.5" fill="none" opacity="0.2"/>
+  <path d="M160 165 L168 185" stroke="#39ff14" stroke-width="0.5" fill="none" opacity="0.15"/>
+</svg>

@@ -1,26 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #080808;
+  --surface: #111111;
+  --surface-2: #1a1a1a;
+  --green: #39ff14;
+  --green-dim: #2acc10;
+  --gold: #ffd700;
+  --text: #e0e0e0;
+  --text-muted: #888888;
+  --border: #1f1f1f;
+  --border-green: #39ff1430;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-display {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.text-green {
+  color: var(--green);
+}
+.text-gold {
+  color: var(--gold);
+}
+.text-muted {
+  color: var(--text-muted);
+}
+
+.glow-green {
+  text-shadow: 0 0 10px var(--green), 0 0 20px var(--green), 0 0 40px var(--green);
+}
+.glow-gold {
+  text-shadow: 0 0 10px var(--gold), 0 0 20px var(--gold);
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 0 1px var(--green), 0 0 20px var(--border-green);
+}
+
+.bg-surface { background: var(--surface); }
+.bg-surface-2 { background: var(--surface-2); }
+.border-green-dim { border-color: var(--border-green); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green-dim); }
