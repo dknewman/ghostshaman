@@ -30,9 +30,9 @@ export default function GlowButton({
   }
 
   const variants = {
-    primary: 'bg-[#39ff14] text-black hover:bg-[#2acc10] hover:shadow-[0_0_20px_#39ff14] active:scale-95',
-    outline: 'border border-[#39ff14] text-[#39ff14] hover:bg-[#39ff1415] hover:shadow-[0_0_15px_#39ff1440] active:scale-95',
-    ghost: 'text-[#39ff14] hover:text-white hover:underline active:scale-95',
+    primary: 'bg-[#7FAF16] text-black hover:bg-[#2acc10] hover:shadow-[0_0_20px_#7FAF16] active:scale-95',
+    outline: 'border border-[#7FAF16] text-[#7FAF16] hover:bg-[#7FAF1615] hover:shadow-[0_0_15px_#7FAF1640] active:scale-95',
+    ghost: 'text-[#7FAF16] hover:text-white hover:underline active:scale-95',
   }
 
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`

@@ -17,7 +17,7 @@ export default function TermsPage() {
           { title: '5. CONTACT', body: 'If you have any questions, contact us at hello@ghostshaman.com.' },
         ].map((section) => (
           <div key={section.title}>
-            <h3 className="font-display text-xs text-[#39ff14] tracking-widest mb-2">{section.title}</h3>
+            <h3 className="font-display text-xs text-[#7FAF16] tracking-widest mb-2">{section.title}</h3>
             <p>{section.body}</p>
           </div>
         ))}

@@ -32,7 +32,7 @@ export default function Home() {
       {/* CTA Banner */}
       <section className="border-t border-b border-[#1f1f1f] bg-[#0d0d0d]">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-14 text-center">
-          <p className="font-display text-xs text-[#39ff14] tracking-[0.4em] mb-4">GOT A TIP?</p>
+          <p className="font-display text-xs text-[#7FAF16] tracking-[0.4em] mb-4">GOT A TIP?</p>
           <h2 className="font-display text-2xl md:text-3xl font-black text-white uppercase mb-4">
             Send Us a Scammer
           </h2>

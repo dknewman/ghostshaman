@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --bg: #080808;
-  --surface: #111111;
-  --surface-2: #1a1a1a;
-  --green: #39ff14;
-  --green-dim: #2acc10;
-  --gold: #ffd700;
-  --text: #e0e0e0;
-  --text-muted: #888888;
+  --bg: #050505;
+  --bg-charcoal: #0C0C0C;
+  --panel: #121212;
+  --panel-alt: #1A1A1A;
+  --green-deep: #305000;
+  --green: #547A00;
+  --green-accent: #7FAF16;
+  --green-glow: #A6CC1D;
+  --text: #EDEDED;
+  --text-muted: #A6A6A6;
   --border: #1f1f1f;
-  --border-green: #39ff1430;
+  --danger: #C62828;
+
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-body: 'Rajdhani', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 
 @theme inline {
@@ -30,46 +36,68 @@ html {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.01em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 .font-display {
-  font-family: 'Orbitron', sans-serif;
+  font-family: var(--font-display);
+  font-weight: 400 !important;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
 }
 
 .text-green {
-  color: var(--green);
-}
-.text-gold {
-  color: var(--gold);
+  color: var(--green-accent);
 }
 .text-muted {
   color: var(--text-muted);
 }
 
+/* Restrained glow — capped 8–16px per brand guide */
 .glow-green {
-  text-shadow: 0 0 10px var(--green), 0 0 20px var(--green), 0 0 40px var(--green);
-}
-.glow-gold {
-  text-shadow: 0 0 10px var(--gold), 0 0 20px var(--gold);
+  text-shadow: 0 0 10px rgba(166, 204, 29, 0.5);
 }
 
 .card-glow:hover {
-  box-shadow: 0 0 0 1px var(--green), 0 0 20px var(--border-green);
+  box-shadow: 0 0 0 1px var(--green), 0 0 14px rgba(84, 122, 0, 0.35);
 }
 
-.bg-surface { background: var(--surface); }
-.bg-surface-2 { background: var(--surface-2); }
-.border-green-dim { border-color: var(--border-green); }
+.bg-surface { background: var(--panel); }
+.bg-surface-2 { background: var(--panel-alt); }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--green-dim); }
+::-webkit-scrollbar-thumb:hover { background: var(--green); }
+
+/* Section texture helper */
+.tex-grunge {
+  position: relative;
+}
+.tex-grunge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/05-backgrounds/bg-grunge-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+.tex-grunge > * {
+  position: relative;
+  z-index: 1;
+}

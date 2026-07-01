@@ -27,13 +27,13 @@ export default async function VideoDetailPage({ params }: { params: Promise<{ id
             className="relative aspect-video rounded overflow-hidden flex items-center justify-center"
             style={{ background: `radial-gradient(ellipse at center, ${video.color} 0%, #050505 100%)` }}
           >
-            <div className="w-20 h-20 rounded-full border-2 border-[#39ff14] flex items-center justify-center bg-[#39ff1410]">
-              <span className="text-[#39ff14] text-3xl ml-1">▶</span>
+            <div className="w-20 h-20 rounded-full border-2 border-[#7FAF16] flex items-center justify-center bg-[#7FAF1610]">
+              <span className="text-[#7FAF16] text-3xl ml-1">▶</span>
             </div>
             <span className="absolute bottom-3 right-3 font-display text-sm text-white bg-black/70 px-2 py-1 rounded">
               {video.duration}
             </span>
-            <span className="absolute top-3 left-3 font-display text-[10px] tracking-widest text-[#39ff14] border border-[#39ff1450] bg-[#080808]/80 px-2 py-0.5 rounded">
+            <span className="absolute top-3 left-3 font-display text-[10px] tracking-widest text-[#7FAF16] border border-[#547A0060] bg-[#080808]/80 px-2 py-0.5 rounded">
               {categoryLabel[video.category]}
             </span>
           </div>
@@ -45,7 +45,7 @@ export default async function VideoDetailPage({ params }: { params: Promise<{ id
 
             <div className="flex items-center justify-between mt-4 pb-4 border-b border-[#1f1f1f]">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#39ff1430] flex items-center justify-center text-[#39ff14] font-display text-xs font-bold">
+                <div className="w-10 h-10 rounded-full bg-[#1a1a1a] border border-[#547A0055] flex items-center justify-center text-[#7FAF16] font-display text-xs font-bold">
                   GS
                 </div>
                 <div>
@@ -69,7 +69,7 @@ export default async function VideoDetailPage({ params }: { params: Promise<{ id
 
         {/* Up Next sidebar */}
         <div>
-          <h3 className="font-display text-xs text-[#39ff14] tracking-widest mb-4">UP NEXT</h3>
+          <h3 className="font-display text-xs text-[#7FAF16] tracking-widest mb-4">UP NEXT</h3>
           <div className="flex flex-col gap-3">
             {upNext.map((v) => (
               <VideoCard key={v.id} video={v} />

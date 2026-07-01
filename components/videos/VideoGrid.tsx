@@ -24,8 +24,8 @@ export default function VideoGrid() {
             onClick={() => { setActiveCategory(cat.id); setVisibleCount(6) }}
             className={`font-display text-[10px] tracking-widest px-4 py-2 rounded border transition-all duration-150 ${
               activeCategory === cat.id
-                ? 'border-[#39ff14] text-[#39ff14] bg-[#39ff1410]'
-                : 'border-[#1f1f1f] text-[#666] hover:border-[#39ff1430] hover:text-white'
+                ? 'border-[#7FAF16] text-[#7FAF16] bg-[#7FAF1610]'
+                : 'border-[#1f1f1f] text-[#666] hover:border-[#547A0055] hover:text-white'
             }`}
           >
             {cat.label}

@@ -13,9 +13,9 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="border border-[#39ff1430] rounded bg-[#001a00]/30 p-8 text-center">
+      <div className="border border-[#547A0055] rounded bg-[#001a00]/30 p-8 text-center">
         <div className="text-4xl mb-4">👻</div>
-        <h3 className="font-display text-lg text-[#39ff14] tracking-wider mb-2">Message Received</h3>
+        <h3 className="font-display text-lg text-[#7FAF16] tracking-wider mb-2">Message Received</h3>
         <p className="text-[#888] text-sm">We&apos;ll get back to you soon. Stay vigilant out there.</p>
         <button
           onClick={() => { setForm({ name: '', email: '', subject: '', message: '' }); setSubmitted(false) }}
@@ -27,7 +27,7 @@ export default function ContactForm() {
     )
   }
 
-  const inputCls = 'w-full bg-[#111] border border-[#1f1f1f] rounded px-4 py-3 text-[#e0e0e0] text-sm placeholder:text-[#444] focus:outline-none focus:border-[#39ff1460] transition-colors'
+  const inputCls = 'w-full bg-[#111] border border-[#1f1f1f] rounded px-4 py-3 text-[#e0e0e0] text-sm placeholder:text-[#444] focus:outline-none focus:border-[#547A0070] transition-colors'
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">

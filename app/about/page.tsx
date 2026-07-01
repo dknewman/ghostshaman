@@ -19,7 +19,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         {/* Text */}
         <div>
-          <SectionHeading title="GhostShaman?" goldWord="Who is" />
+          <SectionHeading title="GhostShaman?" greenWord="Who is" />
           <div className="space-y-4 text-[#888] leading-relaxed">
             <p>
               I expose scammers, share security knowledge, and build tools to help people stay one step ahead. This channel is about awareness, entertainment, and making the internet a safer place.
@@ -30,7 +30,7 @@ export default function AboutPage() {
             <p>
               After 5+ years on the hunt, 1000+ scammers exposed, and 500K+ people reached, the mission hasn&apos;t changed. We keep going until the internet is a little safer for everyone.
             </p>
-            <p className="text-[#e0e0e0] italic border-l-2 border-[#39ff14] pl-4">
+            <p className="text-[#e0e0e0] italic border-l-2 border-[#7FAF16] pl-4">
               &mdash; GhostShaman
             </p>
           </div>
@@ -42,13 +42,14 @@ export default function AboutPage() {
 
         {/* Mascot */}
         <div className="relative flex justify-center">
-          <div className="relative w-64 h-80 md:w-80 md:h-96">
-            <div className="absolute inset-0 rounded-full bg-[#39ff14] opacity-[0.05] blur-2xl" />
+          <div className="relative w-72 h-72 md:w-96 md:h-96">
+            <div className="absolute inset-0 rounded-full bg-[#547A00] opacity-[0.06] blur-2xl" />
             <Image
-              src="/assets/skull-mascot.svg"
+              src="/assets/02-mascots/mascot-hero-side.png"
               alt="GhostShaman"
               fill
-              className="object-contain drop-shadow-[0_0_30px_#39ff1420]"
+              sizes="(max-width: 768px) 288px, 384px"
+              className="object-contain"
             />
           </div>
         </div>
@@ -67,11 +68,11 @@ export default function AboutPage() {
       {/* Mission */}
       <div className="border border-[#1f1f1f] rounded bg-[#111] p-8 md:p-10">
         <div className="flex items-start gap-4 mb-6">
-          <div className="w-10 h-10 rounded bg-[#1a1a1a] border border-[#39ff1430] flex items-center justify-center flex-shrink-0">
-            <span className="text-[#39ff14] text-lg">👻</span>
+          <div className="w-10 h-10 rounded bg-[#1a1a1a] border border-[#547A0055] flex items-center justify-center flex-shrink-0">
+            <span className="text-[#7FAF16] text-lg">👻</span>
           </div>
           <div>
-            <h3 className="font-display text-sm text-[#39ff14] tracking-widest mb-1">THE MISSION</h3>
+            <h3 className="font-display text-sm text-[#7FAF16] tracking-widest mb-1">THE MISSION</h3>
             <p className="text-[#888] leading-relaxed">
               Expose the bad guys. Protect the good people. Educate and entertain along the way. Together, we make the internet a harder place for scammers to thrive.
             </p>
@@ -84,7 +85,7 @@ export default function AboutPage() {
             { title: 'EDUCATE', desc: 'An informed community is a protected community. Knowledge is the best defense.' },
           ].map((item) => (
             <div key={item.title} className="border border-[#1f1f1f] rounded p-4">
-              <p className="font-display text-xs text-[#39ff14] tracking-widest mb-2">{item.title}</p>
+              <p className="font-display text-xs text-[#7FAF16] tracking-widest mb-2">{item.title}</p>
               <p className="text-[#666] text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}

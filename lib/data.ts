@@ -91,62 +91,14 @@ export const categories = [
 ];
 
 export const products = [
-  {
-    id: "1",
-    name: "Tribal Hoodie",
-    price: 44.99,
-    category: "apparel",
-    color: "#1a0a00",
-  },
-  {
-    id: "2",
-    name: "Ghost Tee",
-    price: 24.99,
-    category: "apparel",
-    color: "#001a0a",
-  },
-  {
-    id: "3",
-    name: "Shaman Snapback",
-    price: 29.99,
-    category: "hats",
-    color: "#0a001a",
-  },
-  {
-    id: "4",
-    name: "Tribal Sticker Pack",
-    price: 9.99,
-    category: "stickers",
-    color: "#001a1a",
-  },
-  {
-    id: "5",
-    name: "Ghost Logo Tee",
-    price: 22.99,
-    category: "apparel",
-    color: "#1a1a00",
-  },
-  {
-    id: "6",
-    name: "Skull Beanie",
-    price: 19.99,
-    category: "accessories",
-    color: "#0a0a1a",
-  },
-  {
-    id: "7",
-    name: "GhostShaman Patch",
-    price: 7.99,
-    category: "accessories",
-    color: "#1a000a",
-  },
-  {
-    id: "8",
-    name: "Dad Hat",
-    price: 24.99,
-    category: "hats",
-    color: "#001a00",
-  },
+  { id: "1", name: "Tribal Hoodie", price: 44.99, category: "apparel", image: "/assets/08-merch/merch-hoodie.png" },
+  { id: "2", name: "Ghost Tee", price: 24.99, category: "apparel", image: "/assets/08-merch/merch-tee.png" },
+  { id: "3", name: "Shaman Snapback", price: 29.99, category: "hats", image: "/assets/08-merch/merch-snapback.png" },
+  { id: "4", name: "Tribal Sticker Pack", price: 9.99, category: "stickers", image: "/assets/08-merch/sticker-pack.png" },
+  { id: "5", name: "Curved Brim Hat", price: 27.99, category: "hats", image: "/assets/08-merch/merch-hat.png" },
+  { id: "6", name: "Skull Sticker", price: 4.99, category: "stickers", image: "/assets/08-merch/sticker-skull.png" },
+  { id: "7", name: "Emblem Sticker", price: 4.99, category: "stickers", image: "/assets/08-merch/sticker-emblem.png" },
+  { id: "8", name: "Lock Sticker", price: 4.99, category: "accessories", image: "/assets/08-merch/sticker-lock.png" },
 ];
 
 export const merchCategories = [
