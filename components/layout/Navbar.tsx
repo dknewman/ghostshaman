@@ -35,14 +35,22 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-[#1f1f1f] bg-[#050505]/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0 flex items-center gap-2">
+          <Image
+            src="/assets/01-brand/ghostshaman-emblem.png"
+            alt=""
+            width={40}
+            height={40}
+            priority
+            className="w-8 h-8 md:w-9 md:h-9 object-contain"
+          />
           <Image
             src="/assets/01-brand/ghostshaman-wordmark.png"
             alt="GhostShaman"
-            width={180}
-            height={54}
+            width={170}
+            height={51}
             priority
-            className="w-[140px] md:w-[168px] h-auto mix-blend-screen"
+            className="w-[128px] md:w-[150px] h-auto mix-blend-screen"
           />
         </Link>
 

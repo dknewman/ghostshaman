@@ -68,8 +68,8 @@ export default function AboutPage() {
       {/* Mission */}
       <div className="border border-[#1f1f1f] rounded bg-[#111] p-8 md:p-10">
         <div className="flex items-start gap-4 mb-6">
-          <div className="w-10 h-10 rounded bg-[#1a1a1a] border border-[#547A0055] flex items-center justify-center flex-shrink-0">
-            <span className="text-[#7FAF16] text-lg">👻</span>
+          <div className="relative w-11 h-11 rounded bg-[#1a1a1a] border border-[#547A0055] flex-shrink-0 overflow-hidden">
+            <Image src="/assets/01-brand/ghostshaman-emblem.png" alt="" fill sizes="44px" className="object-contain p-1" />
           </div>
           <div>
             <h3 className="font-display text-sm text-[#7FAF16] tracking-widest mb-1">THE MISSION</h3>

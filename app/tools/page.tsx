@@ -1,6 +1,7 @@
 import SectionHeading from '@/components/ui/SectionHeading'
 import ToolCard from '@/components/tools/ToolCard'
 import GlowButton from '@/components/ui/GlowButton'
+import Watermark from '@/components/ui/Watermark'
 import { tools } from '@/lib/data'
 
 export const metadata = {
@@ -9,7 +10,9 @@ export const metadata = {
 
 export default function ToolsPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6 py-12">
+    <div className="relative overflow-hidden">
+      <Watermark className="top-0 right-0 w-56 h-56 md:w-72 md:h-72 -mt-2 mr-4" />
+      <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-12">
       <SectionHeading
         title="Tools & Resources"
         subtitle="Handpicked tools and resources to help you stay secure and informed."
@@ -33,6 +36,7 @@ export default function ToolsPage() {
           Send it our way! We&apos;re always looking for resources that help the community stay safe.
         </p>
         <GlowButton href="/contact" variant="outline">Submit a Tool</GlowButton>
+      </div>
       </div>
     </div>
   )

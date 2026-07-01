@@ -3,29 +3,29 @@ import GlowButton from '@/components/ui/GlowButton'
 
 export default function NotFound() {
   return (
-    <div className="flex-1 flex flex-col items-center justify-center text-center px-4 py-20">
-      {/* 404 mascot */}
-      <div className="relative w-56 h-56 md:w-64 md:h-64 mb-4">
-        <div className="absolute inset-0 rounded-full bg-[#547A00] opacity-[0.08] blur-2xl" />
+    <div className="flex-1 flex flex-col items-center justify-center text-center px-4 py-20 relative overflow-hidden">
+      {/* faint skull watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.05]">
+        <div className="relative w-[420px] h-[420px]">
+          <Image src="/assets/02-mascots/mascot-404-ghost.png" alt="" fill sizes="420px" className="object-contain" />
+        </div>
+      </div>
+
+      <h1 className="sr-only">404 — Page Not Found</h1>
+
+      {/* Brush 404 graphic */}
+      <div className="relative w-[320px] h-[195px] md:w-[440px] md:h-[268px] mb-4">
         <Image
-          src="/assets/02-mascots/mascot-404-ghost.png"
-          alt=""
+          src="/assets/09-page-graphics/error-404-graphic.png"
+          alt="404 — Page Not Found"
           fill
-          sizes="256px"
-          className="object-contain"
+          sizes="(max-width: 768px) 320px, 440px"
+          className="object-contain mix-blend-screen"
+          priority
         />
       </div>
 
-      <h1
-        className="font-display text-[110px] md:text-[170px] leading-none text-white"
-        style={{ textShadow: '0 0 40px rgba(166,204,29,0.25)' }}
-      >
-        404
-      </h1>
-      <p className="font-display text-2xl md:text-3xl text-[#7FAF16] tracking-widest mb-3 uppercase glow-green">
-        Page Not Found
-      </p>
-      <p className="text-[#A6A6A6] text-sm max-w-sm mb-8">
+      <p className="relative text-[#A6A6A6] text-sm max-w-sm mb-8">
         Looks like this page disappeared...<br />Maybe the scammers took it.
       </p>
       <GlowButton href="/" size="lg">Go Home</GlowButton>

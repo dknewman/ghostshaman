@@ -1,11 +1,14 @@
 import SectionHeading from '@/components/ui/SectionHeading'
+import Watermark from '@/components/ui/Watermark'
 
 export const metadata = { title: 'Privacy Policy — GhostShaman' }
 
 export default function PrivacyPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 md:px-6 py-12">
-      <SectionHeading title="Privacy Policy" />
+    <div className="relative overflow-hidden">
+      <Watermark src="/assets/08-merch/sticker-lock.png" className="top-12 right-4 w-52 h-52 md:w-72 md:h-72" />
+      <div className="relative max-w-3xl mx-auto px-4 md:px-6 py-12">
+        <SectionHeading title="Privacy Policy" />
       <p className="text-[#555] text-sm mb-8">Last updated: May 20, 2024</p>
       <div className="space-y-6 text-[#888] text-sm leading-relaxed">
         <p>Your privacy matters. This policy explains how we collect, use, and protect your information.</p>
@@ -21,6 +24,7 @@ export default function PrivacyPage() {
             <p>{section.body}</p>
           </div>
         ))}
+        </div>
       </div>
     </div>
   )
