@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import EmailCapture from './EmailCapture'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1f1f1f] bg-[#080808] mt-auto">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <footer className="border-t border-[#1f1f1f] bg-[#050505] mt-auto">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pt-10 pb-4">
+        <EmailCapture />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 md:px-6 pb-10 pt-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <Image src="/assets/01-brand/ghostshaman-wordmark.png" alt="GhostShaman" width={200} height={60} className="mb-4 w-[180px] h-auto mix-blend-screen" />
